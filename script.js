@@ -6,7 +6,7 @@ for(let i=0;i<arr.length;i++){
 	let left=i+1
 	let right=arr.length-1
 	while(left<right){
-		if(Math.abs(target-ans)>Math.abs((a+arr[left]+arr[right])-target)){
+		if(Math.abs(target-ans)>Math.abs((a+arr[left]+arr[right])-target) ){
 			ans=a+arr[left]+arr[right]
 			left++
 			right--
