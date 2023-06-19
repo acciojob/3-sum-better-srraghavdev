@@ -8,13 +8,11 @@ for(let i=0;i<arr.length;i++){
 	while(left<right){
 		if(Math.abs(target-ans)>=Math.abs((a+arr[left]+arr[right])-target) ){
 			ans=a+arr[left]+arr[right]
-			left++
-			right--
 		}
 		if(a+arr[left]+arr[right]>target){
 			right--
 		}
-		if(a+arr[left]+arr[right]<target)){
+		if(a+arr[left]+arr[right]<target){
 			left++
 		}
 	}
